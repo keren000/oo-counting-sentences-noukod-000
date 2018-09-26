@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-  "HI!".end_with?(".")
+  self.end_with?(".") ? true : false 
   end
 
   def question?
@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    
+
   end
 end
