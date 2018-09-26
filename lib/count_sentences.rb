@@ -19,5 +19,5 @@ class String
     count.delete.if{|s| s.empty?}
     count.length
   end
-  return count
+
 end
