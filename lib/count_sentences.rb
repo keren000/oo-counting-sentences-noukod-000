@@ -14,10 +14,11 @@ class String
     self.end_with?("!") ? true : false
   end
 
-  def count_sentences?
-    sentences = self.split(/[.?!]/)
-    sentences.delete.if{|s| s.empty?}
-    sentences.length
+  def count_sentences 
+    sentence_array = self.split(/[.?!]/) 
+    sentence_array.delete_if{|sentence| sentence.empty?} 
+    sentence_array.length
   end
+end 
 
-end
+
